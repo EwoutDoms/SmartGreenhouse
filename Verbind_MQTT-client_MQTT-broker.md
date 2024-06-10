@@ -1,14 +1,22 @@
 import paho.mqtt.client as mqtt  # Importeer de MQTT-clientbibliotheek voor het communiceren met een MQTT-broker.
+
 import subprocess  # Voor het uitvoeren van externe programma's of shell-opdrachten.
 
 mqtt_broker = "192.168.1.254"  # Het IP-adres van de MQTT-broker.
+
 mqtt_port = 1883  # De poort waarop de MQTT-broker luistert.
+
 mqtt_user = "EwoutDoms"  # Gebruikersnaam voor authenticatie bij de MQTT-broker.
+
 mqtt_password = "SMOD3344"  # Wachtwoord voor authenticatie bij de MQTT-broker.
+
 mqtt_topic_prefix = "plant/"  # Voorvoegsel voor MQTT-onderwerpen (topics).
 
+
 def on_connect(client, userdata, flags, rc):
+
     print("Geconnecteerd")  # Bericht om aan te geven dat de verbinding tot stand is gebracht.
+    
     client.subscribe([  # Abonneer op meerdere MQTT-onderwerpen met QoS-niveau 0.
         (mqtt_topic_prefix + "plant1/temperatuur", 0),
         (mqtt_topic_prefix + "plant1/humidity", 0),
