@@ -40,24 +40,15 @@ Dit project heeft als doel een slim systeem te creëren dat automatisch de omgev
    - Wire.h
    - LiquidCrystal_I2C.h
 
-3. Volg de bedrading schema's in `docs/wiring_diagram.pdf`.
+3. Volg de bedrading en pcb schema's in:
+`bedrading_schema.pdf`
+`Foto_PCB_Layout.pdf`
+`pcb_layouts`
+5. Upload de code van `code/esp32_code.ino` naar je ESP32 met behulp van Arduino IDE.
 
-4. Upload de code van `code/esp32_code.ino` naar je ESP32 met behulp van Arduino IDE.
-
-5. Stel InfluxDB en Grafana in zoals beschreven in `docs/setup_influxdb_grafana.md`.
+6. Stel InfluxDB en Grafana in zoals beschreven in `docs/setup_influxdb_grafana.md`.
 
 ## Gebruik
 1. Zet de ESP32 en Raspberry Pi aan.
 2. Toegang tot Grafana op `http://<raspberry-pi-ip>:3000` om de gegevens te visualiseren.
 3. Monitor het LCD-scherm voor real-time sensor gegevens.
-
-## Directory Structuur
-SmartGreenhouse/
-├── code/
-│   └── esp32_code.ino
-├── docs/
-│   ├── wiring_diagram.pdf
-│   └── setup_influxdb_grafana.md
-├── pcb/
-│   └── pcb_layouts.brd
-└── README.md
