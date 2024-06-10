@@ -44,9 +44,10 @@ Dit project heeft als doel een slim systeem te creëren dat automatisch de omgev
 `bedrading_schema.pdf`
 `Foto_PCB_Layout.pdf`
 `pcb_layouts`
-5. Upload de code van `code/esp32_code.ino` naar je ESP32 met behulp van Arduino IDE.
+5. Upload de code van `esp32_code.ino` naar je ESP32 met behulp van Arduino IDE.
+6. Upload de code van `Verbind_MQTT-client_MQTT-broker.md` en `Brug_MQTT-broker_InfluxDB-database.md` naar je Raspberry Pi.
 
-6. Stel InfluxDB en Grafana in zoals beschreven in `docs/setup_influxdb_grafana.md`.
+7. Stel InfluxDB en Grafana in zoals beschreven in `Setup_Influxdb_Grafana.pdf`.
 
 ## Gebruik
 1. Zet de ESP32 en Raspberry Pi aan.
