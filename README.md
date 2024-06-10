@@ -21,6 +21,8 @@ Dit project heeft als doel een slim systeem te creëren dat automatisch de omgev
 - RFID-lezer
 - Ultrasone sensor
 - LCD-scherm
+- 2 led's
+- DHT11
 - Raspberry Pi
 
 ### Software Vereisten
