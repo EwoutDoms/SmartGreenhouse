@@ -12,23 +12,22 @@ mqtt_password = "SMOD3344"  # Wachtwoord voor authenticatie bij de MQTT-broker.
 
 mqtt_topic_prefix = "plant/"  # Voorvoegsel voor MQTT-onderwerpen (topics).
 
-
 def on_connect(client, userdata, flags, rc):
 
     print("Geconnecteerd")  # Bericht om aan te geven dat de verbinding tot stand is gebracht.
     
-    client.subscribe([  # Abonneer op meerdere MQTT-onderwerpen met QoS-niveau 0.
-        (mqtt_topic_prefix + "plant1/temperatuur", 0),
-        (mqtt_topic_prefix + "plant1/humidity", 0),
-        (mqtt_topic_prefix + "plant1/vochtigheidPercentage", 0),
-        (mqtt_topic_prefix + "plant1/ldrwaarde", 0),
-        (mqtt_topic_prefix + "plant1/DS18B20", 0),
-        (mqtt_topic_prefix + "plant1/waterAfstand", 0),
-        (mqtt_topic_prefix + "plant1/LEDaan", 0),
-        (mqtt_topic_prefix + "plant1/waterpompAAN", 0),
-        (mqtt_topic_prefix + "plant1/warmtematLED", 0),
-        (mqtt_topic_prefix + "plant1/VentilatorLED", 0),
-    ])
+     client.subscribe([  # Abonneer op meerdere MQTT-onderwerpen met QoS-niveau 0.
+         (mqtt_topic_prefix + "plant1/temperatuur", 0),
+         (mqtt_topic_prefix + "plant1/humidity", 0),
+         (mqtt_topic_prefix + "plant1/vochtigheidPercentage", 0),
+         (mqtt_topic_prefix + "plant1/ldrwaarde", 0),
+         (mqtt_topic_prefix + "plant1/DS18B20", 0),
+         (mqtt_topic_prefix + "plant1/waterAfstand", 0),
+         (mqtt_topic_prefix + "plant1/LEDaan", 0),
+         (mqtt_topic_prefix + "plant1/waterpompAAN", 0),
+         (mqtt_topic_prefix + "plant1/warmtematLED", 0),
+         (mqtt_topic_prefix + "plant1/VentilatorLED", 0),
+         ])
 
 client = mqtt.Client()  # Maak een nieuwe MQTT-client aan.
 client.username_pw_set(mqtt_user, mqtt_password)  # Stel de gebruikersnaam en wachtwoord in voor authenticatie.
