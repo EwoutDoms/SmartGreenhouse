@@ -5,11 +5,11 @@ from influxdb import InfluxDBClient  # Importeer de InfluxDB-clientbibliotheek v
 
 INFLUXDB_ADDRESS = '192.168.1.254'  # Het IP-adres van de InfluxDB-server.
 INFLUXDB_USER = 'Ewout10'  # Gebruikersnaam voor authenticatie bij de InfluxDB-server.
-INFLUXDB_PASSWORD = 'SMOD3344'  # Wachtwoord voor authenticatie bij de InfluxDB-server.
+INFLUXDB_PASSWORD = 'YOURPASSWORD'  # Wachtwoord voor authenticatie bij de InfluxDB-server.
 INFLUXDB_DATABASE = 'plant10'  # Naam van de te gebruiken InfluxDB-database.
 MQTT_ADDRESS = '192.168.1.254'  # Het IP-adres van de MQTT-broker.
 MQTT_USER = 'EwoutDoms'  # Gebruikersnaam voor authenticatie bij de MQTT-broker.
-MQTT_PASSWORD = 'SMOD3344'  # Wachtwoord voor authenticatie bij de MQTT-broker.
+MQTT_PASSWORD = 'YOURPASSWORD'  # Wachtwoord voor authenticatie bij de MQTT-broker.
 MQTT_TOPIC = 'plant/+/+'  # MQTT-onderwerp (topic) waarop wordt geabonneerd, met jokertekens.
 MQTT_REGEX = 'plant/([^/]+)/([^/]+)'  # Regex-patroon voor het extraheren van gegevens uit het onderwerp.
 MQTT_CLIENT_ID = 'MQTTInfluxDBBridge'  # Client-ID voor de MQTT-client.
