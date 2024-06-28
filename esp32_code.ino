@@ -1,7 +1,7 @@
 // Voor met de wifi te verbinden
 #include <WiFi.h>
-const char* ssid = "YOURWIFINAME";
-const char* password = "YOURWIFIPASSWORD";
+const char* ssid = "YOUR_WIFI_NAME";
+const char* password = "YOUR_WIFI_PASSWORD";
 //////////////////////////////////////////////////////
 // Voor met MQTT te verbinden
 #include <PubSubClient.h>
