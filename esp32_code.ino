@@ -1,14 +1,14 @@
 // Voor met de wifi te verbinden
 #include <WiFi.h>
-const char* ssid = "BandOfBrothers";
-const char* password = "HOMEBARIBAL9";
+const char* ssid = "YOURWIFINAME";
+const char* password = "YOURWIFIPASSWORD";
 //////////////////////////////////////////////////////
 // Voor met MQTT te verbinden
 #include <PubSubClient.h>
 const char* mqttServer = "192.168.0.242";
 const int mqttPort = 1883;
 const char* mqttUser = "EwoutDoms";
-const char* mqttPassword = "SMOD3344";
+const char* mqttPassword = "YOURPASSWORD";
 WiFiClient espClient;
 PubSubClient client(espClient);
 //////////////////////////////////////////////////////
