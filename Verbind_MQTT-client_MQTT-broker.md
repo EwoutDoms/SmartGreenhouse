@@ -9,7 +9,7 @@ mqtt_port = 1883  # De poort waarop de MQTT-broker luistert.
 
 mqtt_user = "EwoutDoms"  # Gebruikersnaam voor authenticatie bij de MQTT-broker.
 
-mqtt_password = "SMOD3344"  # Wachtwoord voor authenticatie bij de MQTT-broker.
+mqtt_password = "YOURPASSWORD"  # Wachtwoord voor authenticatie bij de MQTT-broker.
 
 mqtt_topic_prefix = "plant/"  # Voorvoegsel voor MQTT-onderwerpen (topics).
 
